@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.4.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.4.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.4.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.4.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.4.2/firebase-storage.js"></script>
+    <script src="/__/firebase/5.4.2/firebase.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+  </head>
+  <body>
+    <div id="message">
+      <h2 id="head">FIND YOUR GROCERIES HERE!</h2>
+      <!--a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a-->
+      <form>
+        <input type ="text" id="barcode"/>
+        <input type ="button" value="Search" onclick="getThing()"/>
+      </form>
+    </div>
+      <div id="result">
+        <h1 class="data" id="name">Name</h1>
+        <h1 class="data" id="company">Company</h1>
+        <h1 class="data" id="slogan">Slogan</h1>
+        <h1 class="data" id="10vote">Overall rating 0-10</h1>
+        <h1 class="data" id="10less_water">Less water: 0-10</h1>
+        <h1 class="data" id="10LWcomment">Less water comment</h1>
+        <h1 class="data" id="10more_water">More water: 0-10</h1>
+        <h1 class="data" id="10MWcomment">More water comment</h1>
+        <h1 class="data" id="buyagain">Would buy again?</h1>
+      </div>
+
+    <script src="./index.js"></script>
+
+
+
+  </body>
+</html>
