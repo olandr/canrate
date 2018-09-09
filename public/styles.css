@@ -1,8 +1,40 @@
 body {
-background: #ECEFF1;
-color: rgba(0,0,0,0.87);
-font-family: Roboto, Helvetica, Arial, sans-serif;
-margin: 0; padding: 0;
+  background: #FFA07A;
+  color: rgba(0,0,0,0.87);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; padding: 0;
+}
+
+#result {
+  background: #90EE90;
+  width: 50vw;
+  height: 80vh;
+  margin: auto;
+  margin-bottom: 10vh;
+  padding: 32px 24px;
+  border-radius: 3px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.data  {
+  width: 10vw;
+  height: 10vh;
+  background: white;
+  padding: 5vh 0;
+  border-radius: 3px;
+  background-color: #F08080;
+  flex: 0 0 32%;
+  text-align: center;
+}
+
+#result h1 {
+  font-size: 3vh;
+  margin:auto;
+  vertical-align:middle;
+  white-space: normal;
 }
 
 #message {
@@ -14,17 +46,19 @@ margin: 0; padding: 0;
 }
 
 #message h2 {
-  color: #ffa100;
+  color: black;
   font-weight: bold;
   font-size: 16px;
   margin: 0 0 8px;
 }
+
 #message h1 {
   font-size: 22px;
   font-weight: 300;
   color: rgba(0,0,0,0.6);
   margin: 0 0 16px;
 }
+
 
 #message p {
   line-height: 140%;
@@ -43,7 +77,20 @@ margin: 0; padding: 0;
   border-radius: 4px;
 }
 
-#message, #message a {
+.button {
+ display: block;
+ text-align: center;
+ background: #039be5;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: white;
+ padding: 16px;
+ border-radius: 4px;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+#message, #message a, #result {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -54,10 +101,13 @@ margin: 0; padding: 0;
 }
 
 @media (max-width: 600px) {
-body, #message {
-  margin-top: 0;
-  background: white;
-  box-shadow: none;
-}
-body { border-top: 16px solid #ffa100; }
+  body, #message, #result {
+    margin-top: 0;
+    background: white;
+    box-shadow: none;
+  }
+
+  body {
+    border-top: 16px solid #ffa100;
+    }
 }
