@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.4.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.4.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.4.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.4.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.4.2/firebase-storage.js"></script>
+    <script src="/__/firebase/5.4.2/firebase.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+  </head>
+  <body>
+    <div id="message">
+      <h2 id="fireHeading"></h2>
+      <h1> gegegg</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="demo"></p>
+
+    <script>
+      var config = {
+        apiKey: "AIzaSyBADCA-2rhJkaoqsoHHT3_zbVRElyjzdE0",
+        authDomain: "thinger-thinger.firebaseapp.com",
+        databaseURL: "https://thinger-thinger.firebaseio.com",
+        projectId: "thinger-thinger",
+        storageBucket: "thinger-thinger.appspot.com",
+        messagingSenderId: "413403817750"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
