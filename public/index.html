@@ -20,25 +20,28 @@
   </head>
   <body>
     <div id="message">
-      <h2 id="fireHeading"></h2>
-      <h1> gegegg</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+      <h2 id="head">FIND YOUR GROCERIES HERE!</h2>
+      <!--a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a-->
+      <form>
+        <input type ="text" id="barcode"/>
+        <input type ="button" value="Search" onclick="getThing()"/>
+      </form>
     </div>
-    <p id="demo"></p>
+      <div id="result">
+        <h1 class="data" id="name">Name</h1>
+        <h1 class="data" id="company">Company</h1>
+        <h1 class="data" id="slogan">Slogan</h1>
+        <h1 class="data" id="10vote">Overall rating 0-10</h1>
+        <h1 class="data" id="10less_water">Less water: 0-10</h1>
+        <h1 class="data" id="10LWcomment">Less water comment</h1>
+        <h1 class="data" id="10more_water">More water: 0-10</h1>
+        <h1 class="data" id="10MWcomment">More water comment</h1>
+        <h1 class="data" id="buyagain">Would buy again?</h1>
+      </div>
 
-    <script>
-      var config = {
-        apiKey: "AIzaSyBADCA-2rhJkaoqsoHHT3_zbVRElyjzdE0",
-        authDomain: "thinger-thinger.firebaseapp.com",
-        databaseURL: "https://thinger-thinger.firebaseio.com",
-        projectId: "thinger-thinger",
-        storageBucket: "thinger-thinger.appspot.com",
-        messagingSenderId: "413403817750"
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script src="./index.js"></script>
 
-    <script src="index.js"></script>
+
+
   </body>
 </html>
