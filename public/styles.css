@@ -1,17 +1,52 @@
+/*
+Backgrond color: #DDC5A2
+v
+Firstlevel: #523634
+v
+Secondlevel: #B6452C
+
+Text color: #301B28
+*/
+
 body {
-  background: #FFA07A;
-  color: rgba(0,0,0,0.87);
+  background: #DDC5A2;
+  color: #301B28;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   margin: 0; padding: 0;
 }
 
-#result {
-  background: #90EE90;
+#message {
+  background-color: #523634;
+  width:50vw;
+  margin: 5vh auto;
+  padding: 2vh 2vw;
+  border-radius: 3px;
+  display:flex;
+}
+
+
+#child {
+  background-color: #B6452C;
+  margin:auto;
+  width:25vw;
+  padding: 2vh 2vw;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#message h1 {
+  color: #301B28;
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+#former {
+  background-color: #523634;
   width: 50vw;
-  height: 80vh;
+  height: 10vh;
   margin: auto;
-  margin-bottom: 10vh;
-  padding: 32px 24px;
+  margin-bottom: 5vh;
+  padding: 2vh 2vw;
   border-radius: 3px;
   display:flex;
   flex-wrap: wrap;
@@ -19,13 +54,51 @@ body {
   justify-content: space-around;
 }
 
-.data  {
+input[type=button] {
+  background-color: #B6452C;
+  color: #301B28;
+  margin: 2vh auto;
+  padding: 1vh 2vw;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+input[type=text] {
+  background-color: #DDC5A2;
+  border-radius: 3px;
+  padding:1vh;
+  margin:auto;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #DDC5A2 inset;
+}
+
+#result {
+  background-color: #523634;
+  width: 50vw;
+  height: 80vh;
+  margin: auto;
+  margin-bottom: 5vh;
+  padding: 2vh 2vw;
+  border-radius: 3px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.data {
+  background-color: #B6452C;
   width: 10vw;
   height: 10vh;
-  background: white;
   padding: 5vh 0;
   border-radius: 3px;
-  background-color: #F08080;
   flex: 0 0 32%;
   text-align: center;
 }
@@ -37,28 +110,6 @@ body {
   white-space: normal;
 }
 
-#message {
-  background: white;
-  max-width: 360px;
-  margin: 100px auto 16px;
-  padding: 32px 24px;
-  border-radius: 3px;
-}
-
-#message h2 {
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0 0 8px;
-}
-
-#message h1 {
-  font-size: 22px;
-  font-weight: 300;
-  color: rgba(0,0,0,0.6);
-  margin: 0 0 16px;
-}
-
 
 #message p {
   line-height: 140%;
@@ -66,29 +117,12 @@ body {
   font-size: 14px;
 }
 
-#message a {
-  display: block;
-  text-align: center;
-  background: #039be5;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  padding: 16px;
-  border-radius: 4px;
+#message h2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 8px;
 }
-
-.button {
- display: block;
- text-align: center;
- background: #039be5;
- text-transform: uppercase;
- text-decoration: none;
- color: white;
- padding: 16px;
- border-radius: 4px;
- box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
 
 #message, #message a, #result {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
